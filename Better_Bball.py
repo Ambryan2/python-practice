@@ -36,7 +36,7 @@ while people[0][0] < 5 and people[1][0] < 5:
             if shot_attempt > options[choice]:
                 print('\tMissed')
             else:
-                options = {'layup':int(80 + random.choice(range(0,11))),'mid':int(60 + random.choice(range(0,41))),'three':int(35 + random.choice(range(0,66))),'miracle':10}
+                options = {'layup':int(80 + random.choice(range(0,11))),'mid':int(40 + random.choice(range(0,41))),'three':int(25 + random.choice(range(0,26))),'miracle':10}
                 print(f"\tYou made it {people[turn][2]}!")
                 new_shot_attempt = random.choice(range(0,101))
                 if new_shot_attempt > options[choice]:
