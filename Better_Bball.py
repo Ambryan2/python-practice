@@ -41,11 +41,11 @@ while people[0][0] < 5 and people[1][0] < 5:
                 new_shot_attempt = random.choice(range(0,101))
                 if new_shot_attempt > options[choice]:
                     people[other][0] += 1 #this adds to opposing player score 
-                    people[turn][1] #this adds one to current player turn so that they shoot again 
+                    people[turn][1] += 1 #this adds one to current player turn so that they shoot again 
                     print(f"\t{people[other][2]} missed. {people[other][2]} is now {horse[0:people[other][0]]}")
                 else:    
                     print(f"\t {people[other][2]} made it!")
-                    people[turn][1]
+                    people[turn][1] += 1
     people[other][1] += 1 #this adds one to the player who didn't start the shot
 
 if player_1 == 5:
